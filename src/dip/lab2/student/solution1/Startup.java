@@ -22,9 +22,11 @@ public class Startup {
     public static void main(String[] args) {
         // common behavior = calculating a tip
         // TipCalculator interface as superclass
-        
+        int bags = 6;
+        double bill = 59.99;
+        TipCalculator tp = new BaggageServiceTipCalculator(ServiceQuality.GOOD, bags);
         TipManager tmanager = new TipManager();
-        
+        System.out.println(tmanager.getTip(tp));        
     }
 
 }
