@@ -39,6 +39,8 @@ public class FoodServiceTipCalculator implements TipCalculator {
             case POOR:
                 tip = bill * POOR_RATE;
                 break;
+            default:
+                tip = 0.00;
         }
 
         return tip;
