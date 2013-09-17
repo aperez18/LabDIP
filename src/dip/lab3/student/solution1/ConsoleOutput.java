@@ -8,6 +8,10 @@ package dip.lab3.student.solution1;
  *
  * @author Andy
  */
-public class ConsoleOutput {
+public class ConsoleOutput implements OutputBehavior{
     
+    @Override
+    public void displayOutput(String message){
+        System.out.println("Message: " + message);
+    }
 }

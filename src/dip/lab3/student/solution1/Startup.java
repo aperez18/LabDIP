@@ -10,7 +10,11 @@ package dip.lab3.student.solution1;
  */
 public class Startup {
     public static void main(String[] args) {
-        //JOptionPane.showMessageDialog(null,"Sample String");
-        //String response = JOptionPane.showInputDialog(null, "A Prompt, like enter message here:");
+        
+        InputBehavior input = new GuiInput();
+        OutputBehavior output = new GuiOutput();
+        
+        MessageService messager = new MessageService(input, output);
+        messager.newMessage();
     }
 }

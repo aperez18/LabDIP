@@ -9,6 +9,9 @@ import javax.swing.JOptionPane;
  *
  * @author Andy
  */
-public class GuiInput {
+public class GuiInput implements InputBehavior{
     
+    public String getInput(){
+        return JOptionPane.showInputDialog(null, "Enter message below.");
+    }
 }

@@ -9,5 +9,5 @@ package dip.lab3.student.solution1;
  * @author Andy
  */
 public interface OutputBehavior {
-    public abstract void displayOutput();
+    public abstract void displayOutput(String message);
 }
